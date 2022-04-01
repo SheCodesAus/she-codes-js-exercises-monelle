@@ -15,10 +15,14 @@
         <div id="wrapper">
             <p id="number">0</p>
             <div id="button-wrapper">
-                <input type="button" value="-10" id="subscription" onclick="substract(10)" />
-                <input type="button" value="-1" id="subscription" onclick="substract(1)" />
-                <input type="button" value="+1" id="addition" onclick="add(1)" />
-                <input type="button" value="+10" id="addition" onclick="add(10)" />
+                <!-- Number-only field  -->
+                <input type="number" id="number-input"/>
+                <!-- Add the typed number button-->
+                <input type="button" value="Add" onclick="applyNumberInput()"/> <br>
+                <input type="button" value="-10" onclick="substract(10)" />
+                <input type="button" value="-1" onclick="substract(1)" />
+                <input type="button" value="+1" onclick="add(1)" />
+                <input type="button" value="+10" onclick="add(10)" />
             
             </div>
         </div>
